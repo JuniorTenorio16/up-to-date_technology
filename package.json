@@ -1,0 +1,14 @@
+{
+  "name": "up-to-date_technology",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Junior Tenorio",
+  "license": "MIT",
+  "dependencies": {
+    "express": "*",
+    "redis": "2.8.0" 
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
