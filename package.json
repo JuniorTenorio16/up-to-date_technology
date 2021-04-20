@@ -5,10 +5,10 @@
   "author": "Junior Tenorio",
   "license": "MIT",
   "dependencies": {
-    "express": "*",
-    "redis": "2.8.0" 
+    "axios": "^0.21.1",
+    "express": "*"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node server.js"
   }
 }
