@@ -8,18 +8,18 @@ const calculateRoute = async(req, res) => {
     response = await googleapi.getGeoLocation(address);
     if(response == false) {
         res.status(501).send({
-            mesagem: 'Problema ao processar a sua requisição.'
+            message: 'Problema ao processar a sua requisição.'
         });
         return false;
     } else if(response.length == 1){
         res.status(400).send({
-            mesagem: 'Sintaxe invalida, necessario adicionar dois ou mais endereços nos parametros.'
+            message: 'Sintaxe invalida, necessario adicionar dois ou mais endereços nos parametros.'
         });
         return false;
     }
     result = await calculate.treeLocation(response);
     res.status(200).send({
-        mesagem: result
+        message: result
     });
 }
 router.get('/:address', calculateRoute);
