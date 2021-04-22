@@ -11,11 +11,14 @@
     "eslint-plugin-prettier": "^3.4.0",
     "express": "*",
     "prettier": "^2.2.1",
-    "promise-redis": "^0.0.5"
+    "promise-redis": "^0.0.5",
+    "swagger-autogen": "^2.7.9",
+    "swagger-ui-express": "^4.1.6"
   },
   "scripts": {
     "start": "node server.js",
-    "test": "jest"
+    "test": "jest",
+    "swagger-autogen": "node swagger.js"
   },
   "devDependencies": {
     "eslint": "^7.24.0",
