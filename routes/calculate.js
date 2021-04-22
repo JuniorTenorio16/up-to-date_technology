@@ -10,11 +10,14 @@ const calculateRoute = async(req, res) => {
         res.status(501).send({
             mesagem: 'Problema ao processar a sua requisição.'
         });
+        return false;
     } else if(response.length == 1){
         res.status(400).send({
             mesagem: 'Sintaxe invalida, necessario adicionar dois ou mais endereços nos parametros.'
         });
+        return false;
     }
+    console.log(response);
     result = await calculate.treeLocation(response);
     res.status(200).send({
         mesagem: result

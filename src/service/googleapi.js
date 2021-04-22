@@ -8,7 +8,7 @@ const api = axios.create({
 });
 
 async function getGeoLocation(params){
-   return await axios.get(encodeURI(url+path+params+'&key=AIzaSyDbDgzohjahyjDF9ryw0Aj6LDoEmVf1fG4'))
+    return axios.get(encodeURI(url+path+params+'&key=AIzaSyDbDgzohjahyjDF9ryw0Aj6LDoEmVf1fG4'))
    .then((response) => {
     const results = response.data.results;
     let data = [];

@@ -6,9 +6,19 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^0.21.1",
-    "express": "*"
+    "eslint-config-prettier": "^8.2.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "express": "*",
+    "prettier": "^2.2.1"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "eslint": "^7.24.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "jest": "^26.6.3"
   }
 }
