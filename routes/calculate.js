@@ -17,7 +17,6 @@ const calculateRoute = async(req, res) => {
         });
         return false;
     }
-    console.log(response);
     result = await calculate.treeLocation(response);
     res.status(200).send({
         mesagem: result
