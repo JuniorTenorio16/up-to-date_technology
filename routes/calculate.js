@@ -5,7 +5,7 @@ const calculate = require('../src/helpers/calculate');
 
 const calculateRoute = async(req, res) => {
     const address = req.params.address;
-    response = await googleapi.getGeoLocation(address.replace(' ', '+'));
+    response = await googleapi.getGeoLocation(address);
     if(response == false) {
         res.status(501).send({
             mesagem: 'Problema ao processar a sua requisição.'
